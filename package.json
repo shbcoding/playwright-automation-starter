@@ -1,0 +1,38 @@
+{
+  "name": "@browsercat/playwright-automation-starter",
+  "version": "1.0.0",
+  "description": "Awesome boilerplate for writing browser automations using Playwright, with debugging and tests ready to go.",
+  "keywords": ["playwright", "browser automation", "typescript", "headless browsers", "web scraping", "web crawler", "browser testing"],
+  "author": {
+    "name": "BrowserCat",
+    "email": "contact@browsercat.com",
+    "url": "https://www.browsercat.com"
+  },
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "dotenv -- tsx src/index.ts",
+    "dev:watch": "dotenv -- tsx --watch src/index.ts",
+    "test": "dotenv -- playwright test",
+    "test:watch": "dotenv -- playwright test --ui",
+    "dev:bcat:watch": "dotenv -v BCAT=1 -- tsx --watch src/index.ts",
+    "dev:bcat": "dotenv -v BCAT=1 -- tsx src/index.ts",
+    "test:bcat": "dotenv -v BCAT=1 -- playwright test",
+    "test:bcat:watch": "dotenv -v BCAT=1 -- playwright test --ui",
+    "clean": "rm -rf .test",
+    "type": "tsc --noEmit"
+  },
+  "dependencies": {
+    "playwright": "1.42.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.42.1",
+    "@tsconfig/node20": "20.1.2",
+    "@tsconfig/strictest": "2.0.3",
+    "@types/node": "=20",
+    "dotenv-cli": "7.3.0",
+    "tsx": "4.7.1",
+    "typescript": "5.3.3"
+  }
+}
